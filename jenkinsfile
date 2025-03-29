@@ -4,20 +4,20 @@ pipeline{
         nodejs 'npm'
     }
     stages{
-        stage('install dependencies'){
+        stage('installDependencies'){
             steps{
                 sh 'npm install';
             }
         }
         
 
-        stage('run tests'){
+        stage('run'){
             steps{
                 sh 'npm run test || echo "No tests defined"';
             }
         }
 
-        stage('build'){
+        stage('bob_the_build'){
             steps{
                 sh 'npm run';
             }
